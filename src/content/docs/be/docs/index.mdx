@@ -30,25 +30,20 @@ import LazyVideo from "@components/LazyVideo.astro"
   </a>
 </div>
 
-## Выкарыстанне Bonjourr у Chrome
+## Выкарыстанне Bonjourr у Chrome {#chrome}
 
-⚠️ Калі ў вас усталяваны дадатак для новай карткі, Chrome дадае аб'яву ўнізе старонкі. Каб не перашкаджаць свайму досведу, вы можаце яе прыбраць, націснуўшы правую кнопку мышы:
+⚠️ Калі ў вас усталяваны дадатак для новай карткі, Chrome дадае аб'яву ўнізе старонкі. **Bonjourr яе не прадугледжвае**, і каб яе прыбраць, націсніце правую кнопку мышы:
 <LazyVideo
 	src="/documentation/getting-started/chrome_footer.mp4"
-	autoplay
-	controls
-	loop
-	muted
-	playsinline
 />
 
-## Іншыя браўзеры на ПК
+## Іншыя браўзеры на ПК {#other-desktop-browsers}
 
-### ✅ Brave
+### ✅ Brave {#brave}
 
 Як і ўсякі іншы бразер на Chromium, Brave падтрымлівае ўсе дадаткі для Chrome. Вы можаце [сцягнуть Bonjourr](https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd) і адразу пачаць яго выкарыстоўваць.
 
-### ✅ Safari (macOS)
+### ✅ Safari (macOS) {#safari-macos}
 
 Bonjourr можна ўсталяваць у Safari для macOS усяго за некалькі секунд:
 
@@ -63,13 +58,13 @@ Bonjourr можна ўсталяваць у Safari для macOS усяго за 
 
 Відэаінструкцыя:
 <LazyVideo
-	src="/documentation/overview/safari-online-install.mp4"
+	src="/documentation/getting-started/safari-online-install.mp4"
   autoplay={false}
 />
 
-<Aside type="note">Bonjourr для Safari быў даступны ў App Store на працягу некалькіх гадоў (у тым ліку для iOS і iPadOS), але ў траўні 2026 г. быў [прыбраны](https://ko-fi.com/post/On-why-we-wont-be-renewing-our-Apple-Developer-ac-W7W31WQTJ5).</Aside>
+<Aside type="note" title="Заўвага">Bonjourr для Safari быў даступны ў App Store на працягу некалькіх гадоў (у тым ліку для iOS і iPadOS), але ў траўні 2026 г. быў [прыбраны](https://ko-fi.com/post/On-why-we-wont-be-renewing-our-Apple-Developer-ac-W7W31WQTJ5).</Aside>
 
-### ✅ Zen
+### ✅ Zen {#zen}
 
 Zen заснаваны на Firefox, таму падтрымлівае кожны створаны для яго дадатак, у тым ліку [Bonjourr](https://addons.mozilla.org/firefox/addon/bonjourr-startpage/). Але, перш як Bonjourr цалкам заменіць новыя карткі, Zen патрабуецца правільна наладзіць.
 
@@ -89,11 +84,11 @@ Zen заснаваны на Firefox, таму падтрымлівае кожн�
 
 Відэаінструкцыя:
 <LazyVideo
-	src="/documentation/overview/zen-config.webm"
+	src="/documentation/getting-started/zen-config.mp4"
   autoplay={false}
 />
 
-### ✅ Vivaldi
+### ✅ Vivaldi {#vivaldi}
 
 У апошніх версіях Vivaldi падтрымка дадаткаў для новых картак значна палепшылася. Пасля ўсталявання Bonjourr праз [інтэрнэт-краму Chrome](https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd) патрабуецца змяніць дзве налады:
 
@@ -101,12 +96,12 @@ Zen заснаваны на Firefox, таму падтрымлівае кожн�
 1. #### Раздзел «Асноўныя»
     У секцыі «Падчас запуску адкрываць» адзначце варыянт «Пазначаныя старонкі». Пасля ў поле «Пачатковыя старонкі» устаўце наступны тэкст і націсніце <kbd>Дадаць</kbd>:
     <Code code={"chrome-extension://dlnejlppicbjfcfcedcflplfjajinajd/index.html"} lang="json" />
-    ![Раздзел налад Vivaldi «Асноўныя»](/documentation/getting-started/vivaldi-general.jpg)
+    ![Раздзел налад Vivaldi «Асноўныя»](@assets/documentation/getting-started/vivaldi-general.jpg)
 2. #### Раздзел «Укладкі»
-    У секцыі «Новая ўкладка» мае быць адзначаным пункт «Кіруецца пашырэннем»: ![Раздзел налад Vivaldi «Укладкі»](/documentation/getting-started/vivaldi-tabs.jpg)
+    У секцыі «Новая ўкладка» мае быць адзначаным пункт «Кіруецца пашырэннем»: ![Раздзел налад Vivaldi «Укладкі»](@assets/documentation/getting-started/vivaldi-tabs.jpg)
 </Steps>
 
-### 🟡 Opera (і Opera GX)
+### 🟡 Opera (і Opera GX) {#opera}
 
 Opera не дазваляе дадаткам змяняць новую картку. І, хаця афіцыйных заяў пра гэта не было, нам здаецца, што нагода таму — эфектыўнасць рэкламы на экспрэс-панэлі ў якасці крыніцы прыбытку.
 
@@ -119,12 +114,12 @@ Opera не дазваляе дадаткам змяняць новую карт�
 
   3. Націсніце значок Bonjourr, каб убачыць у адрасным радку яго поўны URL.
 
-  4. Наладзьце ўсталяваны дадатак на адлюстраванне <bjr>https://online.bonjourr.fr</bjr> — і гатова!
+  4. Наладзьце ўсталяваны дадатак на адлюстраванне `https://online.bonjourr.fr` — і гатова!
 </Steps>
 
-### 🟡 Orion
+### 🟡 Orion {#orion}
 
-Хаця Bonjourr можна ўсталяваць у Orion (прытым падтрымліваюцца версіі і для Chrome, і для Firefox), са стабільнасцю ўсё ж могуць узнікнуць праблемы. Хутчэй за ўсё, з цягам распрацоўкі браўзера сітуацыя будзе паляпшацца.
+Хаця Bonjourr можна ўсталяваць у Orion (прытым падтрымліваюцца версіі і для Chrome, і для Firefox), _са стабільнасцю ўсё ж могуць узнікнуць праблемы_. Хутчэй за ўсё, з цягам распрацоўкі браўзера сітуацыя будзе паляпшацца.
 
 <LinkButton
 	href="https://github.com/victrme/Bonjourr/issues/657"
@@ -135,31 +130,31 @@ Opera не дазваляе дадаткам змяняць новую карт�
 	Тыкет на GitHub-старонцы Orion
 </LinkButton>
 
-## Мабільныя браўзеры
+## Мабільныя браўзеры {#mobile-browsers}
 
 Падтрымка дадаткаў для новых картак на мабільных прыладах не найлепшая, але мы ўсё жа знайшлі спосабы запусціць Bonjourr на тэлефонах і планшэтах (і разумных халадзільніках).
 
-### 🟡 Safari (iOS і iPadOS)
+### 🟡 Safari (iOS і iPadOS) {#safari-ios}
 
 На iOS і iPadOS Apple дазваляе змяняць новую картку Safari толькі праграмам з App Store. Хаця [сваю мы выдалілі](https://ko-fi.com/post/On-why-we-wont-be-renewing-our-Apple-Developer-ac-W7W31WQTJ5), Bonjourr можна выкарыстоўваць з Safari праз праграму [Homepage for Safari](https://apps.apple.com/app/homepage-for-safari/id6481118559), якая мае адкрыты зыходны код.
 
 Праграма дазваляе задаць усякі URL-адрас у якасці старонкі новай карткі ў Safari. Калі вы ўведзяцё `https://online.bonjourr.fr`, Bonjourr будзе працаваць.
 
-### 🟡 Іншыя браўзеры на iOS
+### 🟡 Іншыя браўзеры на iOS {#non-safari-ios}
 
 Для іншых браўзераў на iOS дадаткі ўсталёўваць немагчыма.
 
 Але некаторыя (напрыклад, [Firefox](https://apps.apple.com/app/navigateur-firefox-rapide-s%C3%BBr/id989804926)) дазваляюць задаць уласны URL-адрас для новых картак. Калі ў вас усталяваны такі браўзер, задайце адрас `https://online.bonjourr.fr`. Свае даныя Bonjourr захоўвае ў кэшы, таму нават вэб-версія будзе адкрывацца даволі хутка.
 
-### ❌ Chrome для Android
+### ❌ Chrome для Android {#chrome-android}
 
 Android-версія Chrome не мае сістэмы дадаткаў, таму ўсталяваць Bonjourr у яе будзе немагчыма.
 
-Адзіным спосабам сцягнуць Bonjourr на Android было выкарыстанне браўзера Kiwi, у які можна было ўсталяваць звычайныя дадаткі для Chrome. Але цяпер гэта немагчыма праз спыненне падтрымкі Kiwi.
+Адзіным спосабам сцягнуць Bonjourr на Android было выкарыстанне браўзера Kiwi, у які можна было ўсталяваць звычайныя дадаткі для Chrome. **Але цяпер гэта немагчыма праз спыненне падтрымкі Kiwi.**
 
-<Aside type="note">Нядаўна [стала вядома](https://www.reddit.com/r/kiwibrowser/comments/1i89rje/kiwi_browser_extension_code_integrated_into/), што зыходны код Kiwi быў інтэграваны ў [Microsoft Edge для Android](https://play.google.com/store/apps/details?id=com.microsoft.emmx). Магчымасць усталяваць у яго Bonjourr ёсць, але яшчэ не пратэсціравана.</Aside>
+<Aside type="note" title="Заўвага">Нядаўна [стала вядома](https://www.reddit.com/r/kiwibrowser/comments/1i89rje/kiwi_browser_extension_code_integrated_into/), што зыходны код Kiwi быў інтэграваны ў [Microsoft Edge для Android](https://play.google.com/store/apps/details?id=com.microsoft.emmx). Магчымасць усталяваць у яго Bonjourr ёсць, але яшчэ не пратэсціравана.</Aside>
 
-### ❌ Firefox для Android
+### ❌ Firefox для Android {#firefox-android}
 
 Mozilla не дазваляе дадаткам змяняць пачатковую старонку ў Android-версіі браўзера, таму Bonjourr у яе ўсталяваць немагчыма. Пакуль гэта не зменіцца, мы тут нічога зрабіць не зможам.
 

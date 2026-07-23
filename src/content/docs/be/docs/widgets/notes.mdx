@@ -1,25 +1,28 @@
 ---
 title: ✍️ Нататкі
-description: У нататках можна запісваць простыя тэксты з фарматаваннем Markdown, што ўключае загалоўкі, спісы, палі для птушак. Са спалучэннямі клавіш гэта рабіць лягчэй.
-image: /documentation/backgrounds/mathieu-odin-CjGsv2QjVbo-unsplash.jpg
+description: Пішыце нататкі, выкарыстоўваючы просты сінтаксіс Markdown з загалоўкамі, спісамі спраў, палямі для птушак і спалучэннямі клавіш.
+image: /documentation/docs-headers/mathieu-odin-CjGsv2QjVbo-unsplash.jpg
 ---
 
+import { LinkButton } from "@astrojs/starlight/components"
 import LazyVideo from "@components/LazyVideo.astro"
 
-Віджэт нататак выкарыстоўвае заснаваны на [Markdown](https://www.markdownguide.org/cheat-sheet/) сінтаксіс, які дазваляе ствараць загалоўкі, спісы і палі для птушак. Вы можаце дадаць наступныя сімвалы ў пачатак радка:
+## Фарматаванне нататак {#using-notes-formatting}
+
+Віджэт нататак выкарыстоўвае падобны да [Markdown](https://www.markdownguide.org/cheat-sheet/) сінтаксіс, які дазваляе ствараць загалоўкі, спісы і палі для птушак. Вы можаце дадаць наступныя сімвалы ў пачатак радка:
 
 - `#` асноўны загаловак
 - `##` падзагаловак
 - `###` падпадзагаловак
-- `-` калсічны спіс
+- `-` маркіраваны спіс
 - `[ ]` поле для птушкі (звярніце ўвагу на прабел паміж дужкамі)
 - `[x]` адзначанае поле для птушкі
 
-<LazyVideo src="/documentation/overview/notes.webm" />
+<LazyVideo src="/documentation/widgets/notes.mp4" />
 
-Іншыя асаблівасці Markdown (напрыклад, курсіўны тэкст) у цяперашні момант недаступныя.
+**Іншыя асаблівасці Markdown (тоўсты, курсіўны тэкст, спасылкі) у цяперашні момант недаступныя.**
 
-### Спалучэнні клавіш
+### Спалучэнні клавіш {#keybindings}
 
 Падчас рэдагавання нататак можна выкарыстоўваць наступныя спалучэнні:
 
@@ -30,3 +33,16 @@ import LazyVideo from "@components/LazyVideo.astro"
 | <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>3</kbd> | Стварыць падпадзагаловак   |
 | <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd> | Стварыць звычайны спіс     |
 | <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd> | Стварыць спіс спраў        |
+
+---
+
+_Гэты віджэт заснаваны на pocket editor — рэдактары WYSIWYG, створаным спецыяльна для Bonjourr._
+
+<LinkButton
+	href="https://github.com/victrme/pocket-editor"
+	variant="secondary"
+	icon="github"
+	iconPlacement="start"
+>
+	pocket-editor на GitHub
+</LinkButton>

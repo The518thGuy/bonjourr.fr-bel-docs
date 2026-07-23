@@ -1,34 +1,67 @@
 ---
 title: 🔎 Пошукавы радок
-description: Праз налады пошукавага радку можна выбіраць і дапасоўваць пошукавыя сістэмы і ўключыць прапановы пошуку ды хуткае вылучэнне радка праз спалучэнне клавіш.
-image: /documentation/backgrounds/mathieu-odin-CjGsv2QjVbo-unsplash.jpg
+description: "Дапасоўвайце радок пошуку: задавайце свае пошукавыя сістэмы, наладжвайце выдачу прапаноў."
+image: /documentation/docs-headers/mathieu-odin-CjGsv2QjVbo-unsplash.jpg
 ---
 
-import { Aside } from "@astrojs/starlight/components"
+import { Aside, Steps, LinkButton } from "@astrojs/starlight/components"
 import LazyVideo from "@components/LazyVideo.astro"
 
-## Прапановы
+Bonjourr мае дапасавальны пошукавы радок з прапановамі пошуку і падтрымкай вашых любімых пошукавых сістэм.
 
-Прапановы выдаюцца нашым API. Даведацца пра яго больш і праглядзець яго зыходны код можна [тут](https://github.com/victrme/search-suggestions).
+## Прапановы {#suggestions}
 
-## Уласная пошукавая сістэма
+Прапановы пошуку прадвызначана ўключаны і выдаюцца нашым API.  
+Даведацца больш пра іх функцыянаванне, праглядзець зыходны код ці паведаміць пра памылкі можна на GitHub.
 
-Прадвызначана ў Bonjourr даступныя шматлікія пошукавыя сістэмы, і, калі трэба, вы можаце дадаць свае. Каб гэта зрабіць, у якасці налады пошукавага радку «Рухавік» выберыце «Уласны». У радок **Запыт URL** устаўце адрас старонкі пошуку праз пажаданую пошукавую сістэму, замяніўшы свой запыт на `%s`.
+<LinkButton
+	href="https://github.com/victrme/search-suggestions"
+	variant="secondary"
+	icon="github"
+	iconPlacement="start"
+>
+	search-suggestions на GitHub
+</LinkButton>
 
-Напрыклад, калі вы пашукаеце «кава» праз YouTube, то адрас будзе выглядаць так:  
-`https://www.youtube.com/results?search_query=кава`  
-ці так:  
-`https://www.youtube.com/results?search_query=%D0%BA%D0%B0%D0%B2%D0%B0`
+![Віджэт пошукавага радка з прапановамі](@assets/documentation/widgets/search-suggestions.png)
 
-Проста замяніце слова `кава` ці набор сімвалаў пасля знака «роўна» на `%s`, і ў выніку атрымаецца:  
-`https://www.youtube.com/results?search_query=%s`
+Адключыць прапановы можна праз налады пошукавага радка.
 
-Уставіўшы гэты вынік у поле, вы зможаце карыстацца сваёй пошукавай сістэмай праз Bonjourr.
+## Уласная пошукавая сістэма {#custom-search-engines}
 
-<LazyVideo src="/documentation/overview/custom-search.webm" autoplay={false} />
+У Bonjourr убудаваны шматлікія пошукавыя сістэмы, але вы таксама можаце дадаць **свае ўласныя**. 
 
-Такі метад працуе з большасцю пошукавых сістэм, дзякуючы чаму Bonjourr сумяшчаецца амаль з усімі імі.
+<LazyVideo src="/documentation/widgets/custom-search.mp4" autoplay={false} />
 
-<Aside type="tip">
-	Клавіша <kbd>/</kbd> вылучае радок пошуку.
+<Steps>
+1. #### У якасці сістэмы пошуку выберыце ўласную
+
+   Адкрыйце налады Bonjourr, знайдзіце наладу **Рухавік** і выберыце **Уласны**. З'явіцца поле **Запыт URL**.
+
+2. #### Знайдзіце URL-адрас пошуку
+
+   Напрыклад, калі вы пашукаеце «кава» праз YouTube, то адрас будзе выглядаць так:  
+
+   `https://www.youtube.com/results?search_query=кава`
+   
+   ці так:
+   
+   `https://www.youtube.com/results?search_query=%D0%BA%D0%B0%D0%B2%D0%B0`
+
+3. #### Замяніце запыт на `%s`
+
+   Замяніце слова `кава` ці набор сімвалаў пасля знака «роўна» на `%s`, каб Bonjourr ведаў, куды ўстаўляць ваш запыт.
+   
+   Напрыклад: `https://www.youtube.com/results?search_query=%s`
+
+4. #### Скапіюйце адрас у Bonjourr
+
+   Скапіюйце вынік, які ў вас атрымаўся, у поле **Запыт URL**. Цяпер вашай пошукавай сістэмай можна карыстацца роўна тут.
+
+</Steps>
+
+Такі метад працуе __амаль з кожнай__ пошукавай сістэмай, якая падтрымлівае пошук, заснаваны на URL-адрасе.
+
+<Aside type="tip" title="Парада">
+	Клавіша <kbd>/</kbd> заўжды вылучае радок пошуку.
 </Aside>
